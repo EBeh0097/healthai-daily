@@ -35,10 +35,10 @@ TOPIC_KEYWORDS = [
 
 def score_story(story: dict) -> int:
     text = " ".join([
-        story.get("title", ""),
-        story.get("snippet", ""),
-        story.get("source", ""),
-        story.get("link", ""),
+        str(story.get("title", "")),
+        str(story.get("snippet", "")),
+        str(story.get("source", "")),
+        str(story.get("link", "")),
     ]).lower()
 
     score = 0
