@@ -30,7 +30,17 @@ with st.sidebar:
     )
     top_per_region = st.slider("Stories per region", 1, 5, 2)
     generate_scripts = st.checkbox("Generate fact-check notes and Shorts scripts", value=False)
-    voice_gender = st.radio("Anchor voice", ["female", "male"], horizontal=True)\n    use_ai_images = st.checkbox("Use AI-generated healthcare visuals", value=False)
+    voice_gender = st.radio(
+    "Anchor voice",
+    ["female", "male"],
+    horizontal=True
+    )
+
+    use_ai_images = st.checkbox(
+    "Use AI-generated healthcare visuals",
+    value=False
+    )
+
     run_button = st.button("Run Regional Newsroom", type="primary")
 
 if "regional_df" not in st.session_state:
