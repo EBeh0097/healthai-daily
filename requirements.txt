@@ -1,6 +1,0 @@
-streamlit
-pandas
-requests
-openai
-google-cloud-secret-manager
-python-dotenv
