@@ -18,7 +18,7 @@ def generate_ai_scene_image(title: str, region: str, source: str, scene_type: st
     result = client.images.generate(
         model="gpt-image-1",
         prompt=prompt,
-        size="1024x1792",
+        size="1024x1536",
         n=1,
     )
 
